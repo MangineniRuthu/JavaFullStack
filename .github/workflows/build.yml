@@ -21,8 +21,9 @@ jobs:
           cache: maven
       - name: Build with Maven
         run: mvn clean install
+
       - name: Build & Push Docker Image
-        run: mr-smithers-excellant/docker-build-push@v5
+        uses: mr-smithers-excellent/docker-build-push@v5
         with:
           image:  mangineniruthu998/javafullstack
           tags: latest

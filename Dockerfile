@@ -1,4 +1,4 @@
 FROM openjdk:17
 EXPOSE 8080
-COPY target/learningacademy.jar app.jar
-ENTRYPOINT ["java","-java","/app.jar"]
+COPY target/learningacademy.jar javafullstack.jar
+ENTRYPOINT ["java","-java","/javafullstack.jar"]
